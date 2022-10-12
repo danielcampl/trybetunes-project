@@ -1,0 +1,102 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 150px;
+    height: 12vh;
+    align-items: center;
+    background: #2f2841;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.header-title-container > h1 {
+    font-size: 48px;
+    color: #77ffc0;
+    width: 250px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+}
+
+.profile-container {
+    color: #3a2d5c;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #77ffc0;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+#person-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#trybe-logo {
+    width: 40px;
+    height: 40px;
+    padding: 10px 2px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px;
+}
+
+.all-links {
+    text-decoration: none;
+}
+
+.all-links > h2 {
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: #00ff8052;
+    width: 870px;
+    margin-left: 5px;
+    padding: 7px 0px;
+}
+
+#found-text {
+  border: 1px solid rgba(88, 88, 88, 0.671);
+  padding: 10px;
+  text-align: center;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  border: 2px solid rgba(73, 80, 75, 0.438);
+  border-radius: 10px;
+  background-color: #38446862;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  margin: 10px;
+  padding: 50px;
+  color: #fff;
+}
+
+.music-name {
+  width: 50%;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+.artist {
+  
+}
