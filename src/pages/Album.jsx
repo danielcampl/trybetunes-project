@@ -6,6 +6,7 @@ import getMusics from "../services/musicsAPI";
 import Header from "../components/Header";
 import MusicLabels from "./MusicLabels";
 import Loading from "./Loading";
+import '../CSS/MusicLabels.css';
 
 class Album extends Component {
   constructor() {
@@ -53,9 +54,9 @@ class Album extends Component {
         {loadingDisplay ? (
           <Loading />
         ) : (
-          <div data-testid="page-album" className="album-container">
+          <div data-testid="page-album" className="musics">
             <p data-testid="artist-name" className="artist-name-container">{artistName}</p>
-            <h2 data-testid="album-name" album-name-container>{albumName}</h2>
+            <h2 data-testid="album-name">{albumName}</h2>
             {tracksList.map((song) => (
               <MusicLabels
                 key={song.trackId}

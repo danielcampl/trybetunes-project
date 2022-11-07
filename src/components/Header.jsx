@@ -1,10 +1,8 @@
 import React from 'react';
-import { FaHeadphones } from 'react-icons/fa';
 import { BsPersonCircle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import { getUser } from '../services/userAPI';
 
-import Loading from '../pages/Loading';
 import "../CSS/Header.css";
 
 class Header extends React.Component {

@@ -16,8 +16,8 @@ class Login extends React.Component {
     this.createInputUser = this.createInputUser.bind(this);
     this.state = {
       name: "",
-      // email: '',
-      // password: '',
+      email: '',
+      password: '',
       disabled: true,
       carregando: false,
       createdUser: false,
@@ -43,7 +43,7 @@ class Login extends React.Component {
   }
 
   render() {
-    const { name, disabled, createdUser, carregando } = this.state;
+    const { name, disabled, createdUser, carregando, email, password } = this.state;
     return (
       <div>
         {carregando && <Loading />}
@@ -79,7 +79,7 @@ class Login extends React.Component {
                     <input
                       type="email"
                       name="email"
-                      // value={ email }
+                      value={ email }
                       placeholder="Insira seu email"
                       />
                   </div>
@@ -89,7 +89,7 @@ class Login extends React.Component {
                     <input
                       type="text"
                       name="password"
-                      // value={ password }
+                      value={ password }
                       placeholder="Insira sua senha"
                     />
                   </div>
