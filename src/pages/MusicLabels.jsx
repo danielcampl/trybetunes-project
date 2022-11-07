@@ -1,6 +1,8 @@
 import { arrayOf, number, shape, string } from 'prop-types';
 import React, { Component } from 'react';
 import { addSong } from '../services/favoriteSongsAPI';
+
+import '../CSS/MusicLabels.css';
 import Loading from './Loading';
 
 class MusicLabels extends Component {
@@ -38,7 +40,7 @@ class MusicLabels extends Component {
     const { name, audio, trackId } = this.props;
     const { loadingDisplay, checkedValidation } = this.state;
     return (
-      <div>
+      <div className="musics">
         <h3>{ name }</h3>
         <audio data-testid="audio-component" src={ audio } controls>
           <track kind="captions" />
